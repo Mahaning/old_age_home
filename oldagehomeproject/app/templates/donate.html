@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-something" crossorigin="anonymous" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'donate.css' %}">
+	<link rel="stylesheet" href="{% static 'home.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="../Assets/images/favicon/favicon.ico"/>
+        <script src="https://kit.fontawesome.com/15138f295d.js" crossorigin="anonymous"></script>
+        <title>Donate</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<nav>
+		<ul>
+		  <li><a href="{% url '/' %}" class="active"> Home</a></li>
+		  <li><a href="{% url 'aboutus' %}"> About Us</a></li>
+		  <li><a href="{% url 'story' %}">Our Stories</a></li>
+		  <li><a href="{% url 'payment' %}">Donation</a></li>
+		  <li><a href="{% url 'contact' %}"> Contact</a></li>
+		</ul>
+	  </nav>
+
+  
+  <div class="container con-three w3-animate-zoom">
+	<div class="row">
+		<div class="col-lg-4">
+			<img src="{% static 'Assets/images/donate/transfer.svg' %}"  class="rounded donate-second-img" alt="Sending money virtually image">
+		</div>
+		<div class="col-lg-8 payment-container">
+			<h1>Planning to make a donation?</h1>
+			<h2>Scan the QRcode using your phone to start donation</h2>
+			<p >We have various payment integraions to make your donation <strong>faster</strong>, <strong>simpler</strong> and <strong>secured</strong>you can click bellow payment icons and pay.If you want to pay using other payment method u can fill bellow donation Form and donate</p>
+			<div class="btn-grp">
+			<ul class="list-group text-left list-group-flush">
+				<li class="list-group-item">
+					<div class="btn-group-lg" role="group" aria-label="...">
+						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#gpay" aria-expanded="false">
+							<i class="fab fa-google-pay"></i>
+						</button>
+						
+						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#paypal" aria-expanded="false">
+							<i class="fab fa-cc-paypal"></i>
+						</button>
+						
+						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#amazon" aria-expanded="false">
+							<i class="fab fa-cc-amazon-pay"></i>
+						</button>
+						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#mastercard" aria-expanded="false">
+							<i class="fab fa-cc-mastercard"></i>
+						</button>
+						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#gpay" aria-expanded="false">
+							<p>Paytm</p>
+						</button>
+						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#gpay" aria-expanded="false">
+							<p>PhonePe</p>
+						</button>
+					</div>
+
+					<div class="collapse" id="paypal">
+						<div class="card card-body text-center">
+							<h6>
+								Scan the QRcode using your phone to start donation
+							</h6>
+							<img src="{% static 'Assets/images/donate/qr.png' %}" class="rounded mx-auto d-block qr" alt="QR code for paypal">
+							Or click 
+								<a href="https://www.paypal.com/bd/home" target="_blank">
+									<button class="btn btn-light bgColor" type="button">
+									<i class="fab fa-paypal"></i></button></a>
+						</div>
+					</div>
+					<div class="collapse" id="gpay">
+						<div class="card card-body text-center">
+							<h6>
+								Scan the QRcode using your phone to start donation
+							</h6>
+							<img src="{% static 'Assets/images/donate/qr.png' %}" class="rounded mx-auto d-block qr" alt="QR code for google pay">
+							Or click 
+							<a href="https://pay.google.com" target="_blank">
+							<button class="bgColor btn btn-light" type="button">
+								<i class="fab fa-google-pay"></i>
+							</button></a>
+						</div>
+					</div>
+					
+					<div class="collapse" id="mastercard">
+						<div class="card card-body">
+							<form action="./Response/success_pay.html">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="inputEmail3">Email</label>
+										<input type="email" class="form-control" id="inputEmail3" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="inputPassword3">Amount(In USD)</label>
+										<input type="text" class="form-control" id="inputPassword3" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputAddress3">Cardholder Name</label>
+									<input type="text" class="form-control" id="inputAddress3" placeholder="" required>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="inputCardName">Card Number</label>
+										<input type="text" class="form-control" id="inputCardName" required>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="cvc7">CVC</label>
+										<input type="text" class="form-control" id="cvc7" required>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="inputZip7">Expiration </label>
+										<input type="text" class="form-control" id="inputZip7" placeholder="MM/YY" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck7" required>
+										<label class="form-check-label" for="gridCheck7">
+											I agree with <a href="#">terms and conditions</a>
+										</label>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-light paymentBtn">Make Payment</button>
+							</form>
+						</div>
+					</div>
+					<div class="collapse" id="amazon">
+						<div class="card card-body text-center">
+							<h6>
+								Scan the QRcode using your phone to start donation
+							</h6>
+							<img src="{% static 'Assets/images/donate/qr.png' %}" class="rounded mx-auto d-block qr" alt="QR code for amazon pay">
+							Or click <a href="https://pay.amazon.com/" target="_blank"><button class="bgColor btn btn-light" type="button">
+								<i class="fab fa-amazon-pay"></i>
+							</button></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			</div>
+	</div>
+</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 left-img-div">
+			<img src="{% static 'Assets/images/donate/donate.svg' %}"  class="rounded first-img w3-center w3-animate-left" alt="Donating people gifts image">
+		</div>
+		<div class="col-lg-8 right-content-container w3-center w3-animate-right">
+			<h1>For non Fund Donation and services</h1>
+			<p class="lead"> Donate Some Goods and Other Things</p>
+			<p class="first-pera">
+				If You wnat to Donate Other then Money Then please Fill The Bellow linked google form and Our team will contact you for further deatils </p>
+				Click Link To fill The Form <a href="#"><p style="color:blue">Google Form</p></a>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</main>
+<div class="donation-container">
+            <div class="donation-box">
+	            <div class="title">Donation Information</div>
+	            
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name"> 
+		            <input type="text" id="lastName" placeholder="Last Name"> 
+		            <input type="text" id="email" placeholder="Email"> 
+                <input type="text" id="Amount" name="Amount" placeholder="Enter Amout">
+	            </div>
+	            
+	            
+	            
+	            <!-- <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div> -->
+			    <br/>
+          <br/>
+          <br/>
+			    <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+					<br />
+					<input type="checkbox" id="anon" class="checkbox" />
+					<label for="anon">Give Anonymously</label>
+					<br />
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
+			    
+			    <div class="confirm">
+				    
+			    </div>
+
+	            <div id="pay-btn" class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 left-img-div">
+						<img src="{% static 'Assets/images/donate/donate.svg' %}"  class="rounded first-img w3-center w3-animate-left" alt="Donating people gifts image">
+					</div>
+					<div class="col-lg-8 right-content-container w3-center w3-animate-right">
+						<h1>Thank you!</h1>
+						<p class="lead">Without your support we could not continue our operations</p>
+						<p class="first-pera">
+							Our operations are solely based on donation from all around the world. You guys trusted us with this task and we are
+							trying our best to provide the best services for <strong>Orphans</strong> & <strong>Old people</strong> who in need for support.
+							You can read more from <a href="#">Our Stories</a>
+						</p>
+					</div>
+				</div>
+			</div>
+            
+        </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+</body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+	var options = {
+
+	// Enter the Key ID generated from the Dashboard
+	key: "{{ razorpay_merchant_key }}",
+
+	// Amount is in currency subunits.
+	// Default currency is INR. Hence,
+	// 50000 refers to 50000 paise
+	amount: "{{ razorpay_amount }}",
+	currency: "{{ currency }}",
+
+	// Your/store name.
+	name: "Dj Razorpay",
+
+	// Pass the `id` obtained in the response of Step 1
+	order_id: "{{ razorpay_order_id }}",
+	callback_url: "{{ callback_url }}",
+	};
+
+	// initialise razorpay with the options.
+	var rzp1 = new Razorpay(options);
+
+	// add event listener to the payment button.
+	document.getElementById("pay-btn").onclick = function (e) {
+	rzp1.open();
+	e.preventDefault();
+	};
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>

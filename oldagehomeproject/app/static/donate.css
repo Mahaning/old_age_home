@@ -1,0 +1,169 @@
+/* Motasims Part Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Sansita+Swashed&display=swap');
+
+body{
+    font-family: 'Mukta', sans-serif; 
+    color: #202b3a;
+}
+
+h1{
+    font-family: 'Sansita Swashed', cursive !important; 
+}
+
+
+form{
+    text-align: left;
+    width: 60%;
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+footer{
+    text-align: center;
+}
+
+.page-logo{
+    height: 110px;
+    width: 110px;
+}
+
+.first-img{
+    height: 120%;
+    width: 100%;
+}
+
+.right-content-container{
+    text-align: center;
+    padding: 5%;
+}
+
+.left-img-div{
+    padding: 2%;
+}
+
+.right-img-div{
+    padding: 2%;
+}
+
+.h4{
+    font-weight: 100;
+}
+h5{
+    margin-bottom:5%;
+}
+
+.left-content-container{
+    text-align: center;
+}
+
+.payment-container{
+    text-align: center;
+}
+
+.gmap_canvas{
+    height: 300px;
+    width: 100%;
+    padding: 2%;
+}
+
+.social_icon_group{
+    font-size: 50px;
+}
+
+.donate-second-img{
+   width: 100%;
+}
+
+.btn-grp{
+    padding-left: 13%;
+    text-align: left;
+}
+
+.lead{
+    text-decoration: underline;
+}
+
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.fa-instagram:hover{
+    color: #3f729b;
+}
+
+.fa-twitter-square:hover{
+    color: #00acee;
+}
+
+.fa-linkedin:hover{
+    color: #0e76a8;
+}
+
+.fa-youtube-square:hover{
+    color: #e62117;
+}
+
+.con-two{
+    margin-top: 2%;
+}
+
+.con-three{
+    margin-top: 3%;
+}
+.con-four{
+    
+}
+
+.first-pera{
+    text-align: left;
+}
+
+.second-pera{
+    text-align: left;
+}
+
+.supported-payment{
+    font-size: 30px;
+}
+
+.btn-group-lg{
+    text-align: center;
+
+}
+
+.fab{
+    font-size: 150%;
+}
+
+.bgColor{
+    background-color: rgb(242, 242, 242) !important;
+}
+
+/* .fa-google-pay{
+    background-color: #fff !important;
+} */
+
+.qr{
+    height: 50%;
+    width: 50%;
+}
+
+.paymentBtn{
+    background-color: #e83a0d;
+    color: #fff;
+}
+
+.btn:hover{
+    border-bottom-color: #e83a0d;
+    border-top-color: #e83a0d;
+    background-color: rgb(248, 249, 250);
+ }
+ 
+/* Motasims Part End */
+
+table{
+    padding-left: 8%;
+}

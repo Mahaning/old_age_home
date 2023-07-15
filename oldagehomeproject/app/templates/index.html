@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Old Age House</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-something" crossorigin="anonymous" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-something" crossorigin="anonymous" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<style>
+  .banner img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+  }</style>
+
+</head>
+<body>
+  <header>
+    
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="{% url '/' %}" class="active"> Home</a></li>
+      <li><a href="{% url 'aboutus' %}"> About Us</a></li>
+      <li><a href="{% url 'story' %}">Our Stories</a></li>
+      <li><a href="{% url 'payment' %}">Donation</a></li>
+      <li><a href="{% url 'contact' %}"> Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+       
+        
+        
+        <div class="swiper-slide">
+          <img src="{% static 'Assets/images/aboutus/old aged people.jpg' %}" alt="Image 1">
+          {% comment %} <img src="https://via.placeholder.com/800x400?text=Image+1" alt="Image 1"> {% endcomment %}
+          <div class="slide-content">
+            <h2>Welcome to the Old Age House</h2>
+            <p>We provide a nurturing and caring environment for senior citizens. Experience comfort and companionship with our specialized services.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="{% static 'Assets/images/Home/elders-bg.jpg' %}" alt="Image 3">
+          <div class="slide-content">
+            <h2>Experience a Fulfilling Lifestyle</h2>
+            <p>Enjoy nutritious meals, recreational activities, and a welcoming community. Embrace your golden years with dignity and joy at the Old Age House.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="{% static 'Assets/images/Home/1530018548160.jpeg' %}" alt="Image 2">
+          <div class="slide-content">
+            <h2>Quality Care for Seniors</h2>
+            <p>Our dedicated staff is committed to ensuring the well-being and happiness of our residents. We offer personalized care plans and engaging activities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-content">
+      <h2>Welcome To The Family</h2>
+      <div class="info">
+        
+        <div class="info-item">
+          <img src="{% static 'Assets/images/aboutus/hands-2906458_1920.jpg' %}" alt="About Image 3">
+          <p >Each person has hunger for home in the heart. Not just food and a place to sleep, but for safety and community. Most importantly: for love. here, we are much more than a home for  abandoned old people. <br> To bring hope to the people by providing food, shelter, medical care, and more in a manner that breaks the cycle of dependence and promotes individual and societal productivity as well as charitable character within the community. We are working to ensure that every  older people and every senior citizen get children love in their life. We believe that it is our duty to care for our people, to treat them with dignity and to provide them with the highest level of care possible. We are providing a safe home and a new life.</p>
+               
+        </div>
+        
+  </section>
+
+  <section id="banners">
+    <div class="banner">
+      <img src="{% static 'Assets/images/services/health1.jpg' %}" alt="Banner 1">
+      <div class="banner-content">
+        <h3><i class="fas fa-medkit"></i> 24/7 Medical Care</h3>
+        <p>Our experienced medical team ensures round-the-clock care and assistance to meet the unique healthcare needs of our residents.</p>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="{% static 'Assets/images/services/img2.jpg' %}" alt="Banner 2">
+      <div class="banner-content">
+        <h3><i class="fas fa-users"></i> Social Events & Activities</h3>
+        <p>Engage in a variety of social events and activities tailored for seniors. Stay active, make new friends, and enjoy a fulfilling lifestyle.</p>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="{% static 'Assets/images/Home/donate.jpg' %}" alt="Banner 3">
+      <div class="banner-content">
+        <h3><i class="fas fa-home"></i> Comfortable Accommodations</h3>
+        <p>Experience cozy and well-appointed accommodations designed to provide a sense of warmth and security. Feel at home at the Old Age House.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2 class="animate__animated animate__fadeInDown">Contact Us</h2>
+      <div class="contact-info">
+        <div class="info-item animate__animated animate__fadeIn">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Main Street, City, Country</p>
+        </div>
+        <div class="info-item animate__animated animate__fadeIn">
+          <i class="fas fa-phone-alt"></i>
+          <p>+1234567890</p>
+        </div>
+        <div class="info-item animate__animated animate__fadeIn">
+          <i class="fas fa-envelope"></i>
+          <p>info@oldagehouse.com</p>
+        </div>
+      </div>
+      <form class="animate__animated animate__fadeInUp">
+        <div class="form-group">
+          <input type="text" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+
+
+
+  <footer>
+    <p>&copy; 2023 Old Age House. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

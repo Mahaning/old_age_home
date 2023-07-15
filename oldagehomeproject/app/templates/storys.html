@@ -1,0 +1,162 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'Storyboard.css' %}">>
+      <link rel="stylesheet" href="/Styles/footer.css">
+    <script src="https://kit.fontawesome.com/15138f295d.js" crossorigin="anonymous"></script>
+    <title>Storyboard</title>
+  </head>
+        
+    <body>
+       
+
+            <!-- Nav Items-->
+            <nav>
+              <ul>
+                <li><a href="{% url '/' %}" class="active"> Home</a></li>
+                <li><a href="{% url 'aboutus' %}"> About Us</a></li>
+                <li><a href="{% url 'story' %}">Our Stories</a></li>
+                <li><a href="{% url 'payment' %}">Donation</a></li>
+                <li><a href="{% url 'contact' %}"> Contact</a></li>
+              </ul>
+            </nav>
+           
+            <!--Nav closed -->
+      <main>        <!-- Main content  -->
+    <div class="container">
+        <img src="{% static 'Assets/images/storyboard/bg1.jpg' %}" class="img-fluid" alt="Responsive image">
+       <div class="text-block"> 
+    <h3>STORIES OF LIVES TRANFORMED</h3>
+           <p><span>Sheltering bodies, Comforting Souls. </span></p>
+            </div>      
+  </div>
+      
+        
+      <div class="aligner"> 
+        <h1> Our Treasure </h1>
+        <p>The happiness can be created simply from a good health, feeling of love and the faith in life. Thats what life is all about- growing, caring for each other and creating happy memories
+          .Here is the treasure of Nest'em house loaded with beautiful and heart warming memories.  
+</p>
+            <!-- Stories Image Cards created with help of responsive bootstrap element --> 
+      
+        <div class="abc row row-cols-1 row-cols-md-3">
+<div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s1.jpg' %}" class="card-img-top" alt="Rosaline's birthday party">
+    <div class="card-body">
+      <h5 class="card-title"> The Dance Blast </h5>
+      <p class="card-text">Rosaline still got her moves back from her high school days.It was all merry when all the members of the house whirled around celebrating Rosaline's 85th birthday.</p>
+         <div class="card-footer">
+             <a href="../Pages/Story_pages/story1.html"> Read more...</a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s10.jpg' %}" class="card-img-top" alt="Morleen's miracle baby">
+    <div class="card-body">
+      <h5 class="card-title">Morleen's miracle baby</h5>
+      <p class="card-text">The baby brings memory and speech back to aged care resident with dementia.</p>
+        <div class="card-footer">
+             <a href="../Pages/Story_pages/story2.html"> Read more...</a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s4.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">A new Life and better Healthcare</h5>
+      <p class="card-text">New and better Healthcare services were added in order to maintain the healthy lifestyle of the elderly.</p>
+        <div class="card-footer">
+             <a href="../Pages/Story_pages/story3.html"> Read more...</a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s7.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fun-Fair in the House</h5>
+      <p class="card-text">The whole house lit up with cheers and giggles when fun events took place</p>
+    <div class="card-footer">
+             <a href="../Pages/Story_pages/story4.html"> Read more...</a>
+        </div>
+      </div>
+  </div>
+</div>
+            <div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s11.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sharing is love</h5>
+      <p class="card-text">It was heart warming moment when little Han shared his food with 100 year old Alice Clark.</p>
+    <div class="card-footer">
+             <a href="../Pages/Story_pages/story5.html"> Read more...</a>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s9.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Go Green</h5>
+      <p class="card-text">Raising Earth-Friendly kids.Teaching kids to care and respect the environment, with help of elders in the house . </p>
+    <div class="card-footer">
+             <a href="../Pages/Story_pages/story6.html"> Read more...</a>
+        </div>
+      </div>
+  </div>
+</div>
+              <div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s3.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sweet Melodies by Monica</h5>
+      <p class="card-text">Music Sessions with famous town singer Monica and her guitar.</p>
+    <div class="card-footer">
+             <a href="../Pages/Story_pages/story7.html"> Read more...</a>
+        </div>
+      </div>
+  </div>
+</div>
+            <div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/s2.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Jason found his forever home</h5>
+      <p class="card-text">Jason becomes Weasely Jr.. Weaseley's are all smiles and excited  to take Jason as a new family member. Another beautiful adoption story.  </p>
+       <div class="card-footer">
+             <a href="../Pages/Story_pages/story8.html"> Read more...</a>
+      </div>  
+      </div>
+  </div>
+</div>
+<div class="col mb-4">
+  <div class="card h-100">
+    <img src="{% static 'Assets/images/storyboard/img13.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Dwayne beats the champion  </h5>
+      <p class="card-text">Dwayne creates the history in the house by beating the unbeatable Henry in the game.</p>
+    <div class="card-footer">
+             <a href="../Pages/Story_pages/story9.html"> Read more...</a>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+      </div>
+        
+        </main>
+        </body>
+</html>

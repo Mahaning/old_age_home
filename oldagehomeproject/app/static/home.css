@@ -1,0 +1,376 @@
+/* Riya Pate's Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Sansita+Swashed&display=swap');
+
+.page-logo{
+    height: 110px;
+    width: 110px;
+}
+
+.nav-item:hover{
+    box-shadow: 0px 1px 0 0px #e83a0d inset, 0px -1px 0 0px #e83a0d inset;
+}
+
+#line{
+    background-image: url(../Assets/images/Home/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 550px;
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    animation: Fade;
+    animation-duration: 3s;
+}
+
+@keyframes Fade{
+    from {opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+h3{
+    font-size: 300%;
+    color: #f0eada;
+    padding-left: 5%;
+    padding-top: 15%;
+    font-family: 'Mukta', sans-serif;
+}
+
+.box2 {
+    background: linear-gradient(45deg, #e83a0d 30%, #fff 50%);
+    padding-bottom: 10%;
+}
+
+#group{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    padding-left: 150px;
+    float: left;
+}
+
+#wlcTitle{
+    font-size: 50px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#wlcText{
+    font-family: 'Mukta', sans-serif;
+}
+
+h1{
+    font-family: 'Sansita Swashed', cursive;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#triangle-down1 {
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 220px solid #202b3a;
+    margin: 3%;
+}
+
+#triangle-down1:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+#service1{
+    font-size: 35px;
+    font-family: 'Mukta', sans-serif;
+    margin-top: -200px;
+    margin-left: -40px;
+    color: #fff;
+}
+
+#triangle-up1 {
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 220px solid #202b3a;
+    margin-left: 215px;
+    margin-top: -200px;
+}
+
+
+
+#triangle-up1:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+#service2{
+    font-size: 35px;
+    font-family: 'Mukta', sans-serif;
+    margin-top: -200px;
+    margin-left: -95px;
+    padding-top: 100px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: #fff;
+}
+
+#triangle-down2 {
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 220px solid #202b3a;
+    margin: 3%;
+    margin-top: -280px;
+    margin-left: 387px;
+
+}
+
+#triangle-down2:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+#service3{
+    font-size: 35px;
+    font-family: 'Mukta', sans-serif;
+    margin-top: -200px;
+    margin-left: -70px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: #fff;
+}
+
+#triangle-up2 {
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 220px solid #202b3a;
+    margin-left: 560px;
+    margin-top: -200px;
+}
+
+#triangle-up2:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+#service4{
+    font-size: 35px;
+    font-family: 'Mukta', sans-serif;
+    margin-top: -200px;
+    margin-left: -70px;
+    padding-top: 120px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: #fff;
+}
+
+#triangle-down3 {
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 220px solid #202b3a;
+    margin: 3%;
+    margin-top: -280px;
+    margin-left: 740px;
+
+}
+
+#triangle-down3:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+#service5{
+    font-size: 35px;
+    font-family: 'Mukta', sans-serif;
+    margin-top: -200px;
+    margin-left: -60px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: #fff;
+}
+
+.ServiceShape{
+    padding-left: 200px;
+}
+
+#horizontalCard{
+    padding-top: 120px !important;
+    padding-bottom: 100px !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.btn{
+    background-color: #e83a0d;
+
+    font-family: 'Mukta', sans-serif;
+}
+
+.btnLink{
+    color: #fff !important;
+}
+
+.btn:hover{
+    border-bottom-color: #e83a0d;
+    border-top-color: #e83a0d;
+    background-color: rgb(248, 249, 250);
+
+}
+
+.btnLink:hover{
+    color: #202b3a !important;
+    text-decoration: none !important;
+}
+
+#bgImg{
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-top: 200px;
+}
+
+.card-text{
+    color: #202b3a;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+@media only screen and (max-width: 1024px){
+    #line{
+        width: 90%;
+
+    }
+    h3{
+        font-size: 250%;
+    }
+
+    .ServiceShape{
+        padding-left: 100px;
+    }
+
+    #triangle-down1{
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-top: 190px solid #202b3a;
+    }
+
+    #service1{
+        font-size: 30px;
+        margin-top: -170px;
+        margin-left: -40px;
+    }
+
+    #triangle-up1 {
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 190px solid #202b3a;
+        margin-left: 150px;
+    }
+
+    #service2{
+        font-size: 30px;
+        margin-top: -150px;
+        margin-left: -80px;
+
+    }
+
+    #triangle-down2 {
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-top: 190px solid #202b3a;
+        margin-top: -210px;
+        margin-left: 270px;
+    }
+
+    #service3{
+        font-size: 30px;
+        margin-top: -150px;
+        margin-left: -60px;
+    }
+
+    #triangle-up2 {
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-bottom: 190px solid #202b3a;
+        margin-left: 395px;
+    }
+
+    #service4{
+        font-size: 30px;
+        margin-left: -60px;
+    }
+
+    #triangle-down3 {
+
+        border-left: 110px solid transparent;
+        border-right: 110px solid transparent;
+        border-top: 190px solid #202b3a;
+        margin-top: -210px;
+        margin-left: 520px;
+
+    }
+
+    #service5{
+        font-size: 30px;
+        margin-top: -180px;
+        margin-left: -50px;
+    }
+
+    .row{
+        padding-top: 85px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #line{
+        width: 90%;
+
+    }
+    h3{
+        font-size: 150%;
+    }
+
+    .ServiceShape{
+        padding-left: 0px;
+    }
+
+    #triangle-up1{
+        margin-left: 138px;
+    }
+
+    #triangle-up2 {
+        margin-top: 240px;
+        margin-left: 80px;
+    }
+
+    #triangle-down2 {
+        margin-top: -195px;
+        margin-left: 262px;
+    }
+
+    #triangle-down3 {
+        margin-top: -190px;
+        margin-left: 206px;
+    }
+
+    .row{
+        padding-top: 0px !important;
+    }
+
+    #line{
+        height: 370px;
+    }
+
+
+}
