@@ -21,7 +21,7 @@
 		<ul>
 		  <li><a href="{% url '/' %}" class="active"> Home</a></li>
 		  <li><a href="{% url 'aboutus' %}"> About Us</a></li>
-		  <li><a href="{% url 'story' %}">Our Stories</a></li>
+		  <li><a href="{% url 'story' %}">Gallary</a></li>
 		  <li><a href="{% url 'payment' %}">Donation</a></li>
 		  <li><a href="{% url 'contact' %}"> Contact</a></li>
 		</ul>
@@ -45,9 +45,6 @@
 							<i class="fab fa-google-pay"></i>
 						</button>
 						
-						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#paypal" aria-expanded="false">
-							<i class="fab fa-cc-paypal"></i>
-						</button>
 						
 						<button class="btn btn-light bgColor" type="button" data-toggle="collapse" data-target="#amazon" aria-expanded="false">
 							<i class="fab fa-cc-amazon-pay"></i>
@@ -63,24 +60,12 @@
 						</button>
 					</div>
 
-					<div class="collapse" id="paypal">
-						<div class="card card-body text-center">
-							<h6>
-								Scan the QRcode using your phone to start donation
-							</h6>
-							<img src="{% static 'Assets/images/donate/qr.png' %}" class="rounded mx-auto d-block qr" alt="QR code for paypal">
-							Or click 
-								<a href="https://www.paypal.com/bd/home" target="_blank">
-									<button class="btn btn-light bgColor" type="button">
-									<i class="fab fa-paypal"></i></button></a>
-						</div>
-					</div>
 					<div class="collapse" id="gpay">
 						<div class="card card-body text-center">
 							<h6>
 								Scan the QRcode using your phone to start donation
 							</h6>
-							<img src="{% static 'Assets/images/donate/qr.png' %}" class="rounded mx-auto d-block qr" alt="QR code for google pay">
+							<img src="{% static 'Assets/images/donate/success/GpyQR.jpg' %}" class="rounded mx-auto d-block qr" alt="QR code for google pay">
 							Or click 
 							<a href="https://pay.google.com" target="_blank">
 							<button class="bgColor btn btn-light" type="button">
@@ -98,7 +83,7 @@
 										<input type="email" class="form-control" id="inputEmail3" required>
 									</div>
 									<div class="form-group col-md-6">
-										<label for="inputPassword3">Amount(In USD)</label>
+										<label for="inputPassword3">Amount(In INR)</label>
 										<input type="text" class="form-control" id="inputPassword3" required>
 									</div>
 								</div>
@@ -137,7 +122,7 @@
 							<h6>
 								Scan the QRcode using your phone to start donation
 							</h6>
-							<img src="{% static 'Assets/images/donate/qr.png' %}" class="rounded mx-auto d-block qr" alt="QR code for amazon pay">
+							<img src="{% static 'Assets/images/donate/success/GpyQR.jpg' %}" class="rounded mx-auto d-block qr" alt="QR code for amazon pay">
 							Or click <a href="https://pay.amazon.com/" target="_blank"><button class="bgColor btn btn-light" type="button">
 								<i class="fab fa-amazon-pay"></i>
 							</button></a>
@@ -221,7 +206,7 @@
 						<p class="first-pera">
 							Our operations are solely based on donation from all around the world. You guys trusted us with this task and we are
 							trying our best to provide the best services for <strong>Orphans</strong> & <strong>Old people</strong> who in need for support.
-							You can read more from <a href="#">Our Stories</a>
+							You can read more from <a href="#">Gallary</a>
 						</p>
 					</div>
 				</div>
